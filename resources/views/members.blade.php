@@ -7,7 +7,7 @@
     <div class="p-4 flex w-3/4 sm:w-2/4 md:w-2/4 lg:w-1/3 xl:w-1/4 w-64 px-2" style="height:512px ; : auto; overflow-x: hidden; overflow: auto; ">
         <div class="max-w-sm rounded overflow-hidden shadow-lg " style="
     overflow-y: auto;">
-            {{-- <img class="rounded-full mx-auto w-64 h-64" src="{{ $member->picture }}" alt="Sunset in the mountains"> --}}
+            <img class="rounded-full mx-auto w-64 h-64" src="{{ $member->picture }}" alt="Sunset in the mountains">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">{{ $member->name }}</div>
                 <div class="font-bold text-xl text-purple-600 mb-1">{{ $member->position }}</div>
