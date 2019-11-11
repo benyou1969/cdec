@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Member;
+use Illuminate\Support\Facades\DB;
 
 class MemberController extends Controller
 {
@@ -14,7 +15,9 @@ class MemberController extends Controller
     public function index()
     {
         $members = Member::all();
-        return $members;
+        // return $members;
+        // $members = DB::table('members')->select(['name', 'picture', 'position', 'quote', 'links'])->get();
+        return view('members', compact('members'));
     }
 
     /**

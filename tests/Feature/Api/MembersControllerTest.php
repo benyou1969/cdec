@@ -16,7 +16,7 @@ class MembersControllerTest extends TestCase
     public function display_all_members()
     {
         $member = factory('App\Member')->create();
-        $response = $this->json('GET', 'api/members');
+        $response = $this->get('/members');
 
         $response->assertStatus(200)
             ->assertSee($member->name);

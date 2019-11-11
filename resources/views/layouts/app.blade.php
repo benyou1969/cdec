@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,16 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <script srx="{{ mix('css/js.css') }}"></script>
+
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}"></script>
+
 </head>
+
 <body class="bg-gray-100 h-screen antialiased leading-none">
-<div>
-    @yield('content')
-</div>
+    <div>
+        @yield('content')
+    </div>
 </body>
+
 </html>
