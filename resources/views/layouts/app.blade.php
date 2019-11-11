@@ -14,15 +14,14 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}"></script>
-
 </head>
 
 <body class="bg-gray-100 h-screen antialiased leading-none">
-    <div>
+    <div id="app">
         @yield('content')
     </div>
 </body>
+
+<script src="{{ mix('js/app.js') }}"></script>
 
 </html>

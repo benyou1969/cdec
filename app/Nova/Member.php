@@ -44,11 +44,11 @@ class Member extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('name')->sortable(),
-            Image::make('picture')->sortable(),
-            Text::make('quote')->sortable(),
-            Text::make('position')->sortable(),
-            KeyValue::make('links'),
+            Text::make('name'),
+            Image::make('picture'),
+            Text::make('position'),
+            Text::make('quote'),
+            KeyValue::make('links')->rules('json'),
         ];
     }
 
